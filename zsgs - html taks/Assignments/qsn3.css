@@ -1,0 +1,11 @@
+#bg{
+    height:800px;
+    width:1800px;
+    opacity: 0.4;
+}
+#header{
+    display: flex;
+}
+#heading{
+    margin-left: -1000px;
+}

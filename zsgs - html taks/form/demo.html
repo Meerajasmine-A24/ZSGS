@@ -1,0 +1,121 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoho Employee Onboarding Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="page">
+        <div class="header">
+            <img src="zohologo.png" alt="Zoho Logo">
+            <h1>Welcome aboard to the Zoho family!</h1>
+        </div>
+
+        <form class="onboarding-form">
+            <h2>Employee Onboarding Form</h2>
+
+            <h3>Personal Details</h3>
+            <label for="fname">First Name <span class="req">*</span></label>
+            <input type="text" id="fname" name="fname" required>
+            <span id="error1" class="error-msg"></span>
+
+            <label for="lname">Last Name <span class="req">*</span></label>
+            <input type="text" id="lname" name="lname" required>
+            <span id="error2" class="error-msg"></span>
+
+            <label for="email">Email <span class="req">*</span></label>
+            <input type="email" id="email" name="email" required>
+            <span id="error3" class="error-msg"></span>
+
+            <label for="phone">Phone Number <span class="req">*</span></label>
+            <input type="tel" id="phone" name="phone" required>
+            <span id="error4" class="error-msg"></span>
+
+            <label for="dob">Date of Birth <span class="req">*</span></label>
+            <input type="date" id="dob" name="dob" required>
+            <span id="error5" class="error-msg"></span>
+
+            <label for="address">Address <span class="req">*</span></label>
+            <textarea id="address" name="address" rows="3" required></textarea>
+            <span id="error6" class="error-msg"></span>
+
+            <h3>Job Details</h3>
+            <label for="role">Designation <span class="req">*</span></label>
+            <select id="role" name="role" required>
+                <option value="">--Select Role--</option>
+                <option value="sde">Software Development Engineer (SDE)</option>
+                <option value="support">Technical Support Engineer</option>
+                <option value="qa">Quality Assurance Engineer</option>
+                <option value="analyst">Business Analyst</option>
+                <option value="intern">Intern (Software/Support)</option>
+            </select>
+            <span id="error7" class="error-msg"></span>
+
+            <label for="startdate">Joining Date <span class="req">*</span></label>
+            <input type="date" id="startdate" name="startdate" required>
+            <span id="error8" class="error-msg"></span>
+
+            <label for="location">Work Location <span class="req">*</span></label>
+            <select id="location" name="location" required>
+                <option value="">--Select--</option>
+                <option value="chennai">Chennai</option>
+                <option value="coimbatore">Coimbatore</option>
+                <option value="tenkasi">Tenkasi</option>
+                <option value="madurai">Madurai</option>
+            </select>
+            <span id="error9" class="error-msg"></span>
+
+            <h3>Educational Details</h3>
+            <label for="qualification">Highest Qualification <span class="req">*</span></label>
+            <input type="text" id="qualification" name="qualification" required>
+            <span id="error10" class="error-msg"></span>
+
+            <label for="college">College/University <span class="req">*</span></label>
+            <input type="text" id="college" name="college" required>
+            <span id="error11" class="error-msg"></span>
+
+            <label for="yop">Year of Passing <span class="req">*</span></label>
+            <input type="number" id="yop" name="yop" min="1990" max="2030" required>
+            <span id="error12" class="error-msg"></span>
+
+            <h3>Identity & Banking</h3>
+            <label for="aadhar">Aadhar Number <span class="req">*</span></label>
+            <input type="text" id="aadhar" name="aadhar" maxlength="12" required>
+            <span id="error13" class="error-msg"></span>
+
+            <label for="pan">PAN Number <span class="req">*</span></label>
+            <input type="text" id="pan" name="pan" maxlength="10" required>
+            <span id="error14" class="error-msg"></span>
+
+            <label for="bank">Bank Account Number <span class="req">*</span></label>
+            <input type="text" id="bank" name="bank" required>
+            <span id="error15" class="error-msg"></span>
+
+            <label for="ifsc">IFSC Code <span class="req">*</span></label>
+            <input type="text" id="ifsc" name="ifsc" required>
+            <span id="error16" class="error-msg"></span>
+
+            <h3>Emergency Contact</h3>
+            <label for="emgname">Contact Person <span class="req">*</span></label>
+            <input type="text" id="emgname" name="emgname" required>
+            <span id="error17" class="error-msg"></span>
+
+            <label for="relation">Relation <span class="req">*</span></label>
+            <input type="text" id="relation" name="relation" required>
+            <span id="error18" class="error-msg"></span>
+
+            <label for="emgphone">Phone Number <span class="req">*</span></label>
+            <input type="tel" id="emgphone" name="emgphone" required>
+            <span id="error19" class="error-msg"></span>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
